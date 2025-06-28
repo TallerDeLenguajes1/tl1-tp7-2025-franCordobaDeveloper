@@ -9,21 +9,21 @@ namespace EspacioCalculadora
             get { return dato; }
         }
 
-        void Sumar(double termino)
+        public void Sumar(double termino)
         {
             dato += termino;
         }
 
-        void Restar(double termino)
+        public void Restar(double termino)
         {
             dato -= termino;
         }
 
-        void Multiplicar(double termino)
+        public void Multiplicar(double termino)
         {
             dato *= termino;
         }
-        void Dividir(double termino)
+        public void Dividir(double termino)
         {
             if (termino != 0)
             {
@@ -33,7 +33,7 @@ namespace EspacioCalculadora
             Console.WriteLine("Error no se puede divir en 0");
         }
 
-        void Limpiar()
+        public void Limpiar()
         {
             dato = 0;
         }
